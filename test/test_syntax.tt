@@ -1963,4 +1963,9 @@ $dialogue @org.thingpedia.dialogue.transaction.sys_invalid(5 + 3);
 ====
 
 // yes no questions
-[contains(shares_border_with, "Q65"^^org.wikidata:city("los angeles"))] of (@org.wikidata.city(), id == "Q16739"^^org.wikidata:city("long beach"));
+[contains(shares_border_with, "Q65"^^org.wikidata:city("los angeles"))] of (@org.wikidata.city() filter id == "Q16739"^^org.wikidata:city("long beach"));
+
+====
+
+// approximately equal (from csqa)
+@org.wikidata.city() filter area ~~ 1000m2;

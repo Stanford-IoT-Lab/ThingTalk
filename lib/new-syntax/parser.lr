@@ -1173,6 +1173,7 @@ comparison_op : string = {
     '<=';
     '=~';
     '~=';
+    '~~';
 }
 
 function_like_comparison_op : string = {
